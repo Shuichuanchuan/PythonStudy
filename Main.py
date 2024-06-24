@@ -66,22 +66,15 @@ num = 0
 while num < len(guest_list):
     print(f"Dear {guest_list[num].title()},go dinner ok?")
     num = num + 1
-    
+# 得知餐桌不够用了 按顺序删除名单内的元素至两人   
 print('sorry everybody now i just have three seat board')   
 print(guest_list)
-temp_guest = guest_list.pop(0)
-print(f"sorry {temp_guest}")
-temp_guest = guest_list.pop(0)
-print(f"sorry {temp_guest}")
-temp_guest = guest_list.pop(0)
-print(f"sorry {temp_guest}")
-temp_guest = guest_list.pop(0)
-print(f"sorry {temp_guest}")
-temp_guest = guest_list.pop(0)
-print(f"sorry {temp_guest}")
-temp_guest = guest_list.pop(0)
-print(f"sorry {temp_guest}")
-
+i = len(guest_list)
+while i > 2: 
+    temp_guest = guest_list.pop(0)
+    print(f"sorry {temp_guest}")
+    i = i - 1
+# 给剩下的人发消息
 num = 0
 while num < len(guest_list):
     print(f"Dear {guest_list[num].title()},go dinner ok?")
