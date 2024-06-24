@@ -17,4 +17,26 @@ num = 0
 while num < len(name):
     print(name[num].title())
     num = num + 1
-    
+print("\n")
+
+# 用del语句删除元素
+del name[0]
+print(name[0])
+# 删除之后元素会向左补齐
+
+#pop方法删除元素
+print(name)
+popped_name = name.pop()
+print(name)
+print(popped_name)
+name.append("zhao")     #添加zhao为数组最后一个元素
+# 也可以指定任意位置的元素删除，只需要在pop()里指定元素的位置
+print(name)
+first_name = name.pop(0)
+print(name)
+print(first_name)
+name.insert(0,'zhou')   # 添加zhou为数组第一个元素
+
+# 如果要从列表中删除⼀个元素，且不再以任何⽅式使⽤它，
+# 就使⽤ del 语句；如果要在删除元素后继续使⽤它，就使⽤ pop() ⽅法。
+
