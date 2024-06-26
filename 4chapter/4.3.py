@@ -17,3 +17,13 @@ for value in range(1,11):
     square = value ** 2
     squares.append(square)
 print(squares)
+
+# max min sum
+digits = []
+for number in range(10):
+    digit = number
+    digits.append(number)
+print(digits)
+print(min(digits))
+print(max(digits))
+print(sum(digits))
